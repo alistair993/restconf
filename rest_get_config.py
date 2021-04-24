@@ -3,7 +3,7 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-url = 'https://192.168.0.100/restconf/data/native'
+url = 'https://1.1.1.1/restconf/data/native'
 headers = {'content-type': 'application/yang-data+json'}
 
 inUsername = input("Username: ")
