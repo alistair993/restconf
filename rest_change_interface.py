@@ -8,8 +8,8 @@ def PrintBytesAsJSON(bytes):
     print(json.dumps(json.loads(bytes), indent=2))
 
 response = requests.patch(
-    url = 'https://192.168.1.90/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=1',
-    auth = ('admin', 'admin'),
+    url = 'https://1.1.1.1/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=1',
+    auth = ('admin', 'pass'),
     headers = {
         'Accept': 'application/yang-data+json',
         'Content-Type': 'application/yang-data+json'
