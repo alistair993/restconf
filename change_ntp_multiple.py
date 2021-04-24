@@ -8,8 +8,8 @@ def PrintBytesAsJSON(bytes):
     print(json.dumps(json.loads(bytes), indent=2))
 
 response = requests.put(
-    url = 'https://192.168.0.100/restconf/data/native/ntp/server/',
-    auth = ('admin', 'admin'),
+    url = 'https://1.1.1.1/restconf/data/native/ntp/server/',
+    auth = ('user', 'pass'),
     headers = {
         'Accept': 'application/yang-data+json',
         'Content-Type': 'application/yang-data+json'
